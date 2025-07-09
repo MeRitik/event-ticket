@@ -3,8 +3,8 @@ package com.ritik.eventbackend.services;
 import java.util.Optional;
 import java.util.UUID;
 
-import com.ritik.eventbackend.domain.CreateEventRequest;
-import com.ritik.eventbackend.domain.UpdateEventRequest;
+import com.ritik.eventbackend.payload.CreateEventRequest;
+import com.ritik.eventbackend.payload.UpdateEventRequest;
 import com.ritik.eventbackend.entities.Event;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

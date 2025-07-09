@@ -1,4 +1,4 @@
-package com.ritik.eventbackend.domain;
+package com.ritik.eventbackend.payload.dtos;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class UpdateEventRequest {
+public class GetEventDetailsResponseDto {
 
   private UUID id;
   private String name;
@@ -23,5 +23,7 @@ public class UpdateEventRequest {
   private LocalDateTime salesStart;
   private LocalDateTime salesEnd;
   private EventStatusEnum status;
-  private List<UpdateTicketTypeRequest> ticketTypes = new ArrayList<>();
+  private List<GetEventDetailsTicketTypesResponseDto> ticketTypes = new ArrayList<>();
+  private LocalDateTime createdAt;
+  private LocalDateTime updatedAt;
 }

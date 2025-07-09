@@ -1,6 +1,5 @@
-package com.ritik.eventbackend.domain;
+package com.ritik.eventbackend.payload;
 
-import java.util.UUID;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -8,9 +7,8 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class UpdateTicketTypeRequest {
+public class CreateTicketTypeRequest {
 
-  private UUID id;
   private String name;
   private Double price;
   private String description;

@@ -1,4 +1,4 @@
-package com.ritik.eventbackend.domain;
+package com.ritik.eventbackend.payload;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
