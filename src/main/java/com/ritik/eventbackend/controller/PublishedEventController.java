@@ -23,7 +23,6 @@ public class PublishedEventController {
     @GetMapping
     public ResponseEntity<Page<ListPublishedEventResponseDto>> listPublishedEvents(@RequestParam(required = false) String q,
                                                                                    Pageable pageable) {
-
         Page<Event> events;
         if (q != null && !q.trim().isEmpty()) {
             events = eventService.searchPublishedEvents(q, pageable);
